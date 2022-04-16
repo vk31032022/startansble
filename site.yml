@@ -2,3 +2,9 @@
   hosts: all
   tasks:
   - action: ping
+  - name: Creating a file with content
+    copy:
+      dest: "/tmp/lalala"
+      content: |
+        line 01
+        line 02
